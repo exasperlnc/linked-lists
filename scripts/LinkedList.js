@@ -74,4 +74,20 @@ export default class LinkedList {
       }
     }
   }
+
+  toArray() {
+    let currNode = this.head
+    const returnArray = []
+    if (this.head == null) {
+      return returnArray;
+    } else {
+      do {
+       // put currNode.data into returnArray
+      returnArray.push(currNode.data);
+       // move currNode pointer to currNode.next 
+       currNode = currNode.next
+      } while (currNode != null )
+    }
+    return returnArray;
+  }
 }
