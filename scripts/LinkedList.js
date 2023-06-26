@@ -116,4 +116,19 @@ export default class LinkedList {
 
     return null;
   }
+
+  insert(index, data) {
+    let newNode = new Node(data)
+    let currNode = this.head
+    let prevNode = this.head
+    let counter = 0
+    while (counter < index && currNode !== null) {
+      prevNode = currNode;
+      currNode = currNode.next;
+      counter++;
+    }
+    this.length ++;
+    newNode.next = currNode;
+    prevNode.next = newNode;
+  }
 }

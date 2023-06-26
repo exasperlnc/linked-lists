@@ -221,7 +221,7 @@ describe('LINKED LIST', () => {
     });
   });
 
-  describe.skip ('INSERT', () => {
+  describe ('INSERT', () => {
     beforeEach(() => {
       list.push('dark');
       list.push('stormy');
