@@ -114,7 +114,7 @@ describe('LINKED LIST', () => {
       });
   });
 
-  describe.skip('DELETE', () => {
+  describe('DELETE', () => {
     it('deletes a solo node', () => {
       list.push('hello');
       list.delete('hello');

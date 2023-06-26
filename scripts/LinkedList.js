@@ -56,4 +56,22 @@ export default class LinkedList {
 
     return foundNode;
   }
+
+  delete(data) {
+    let prevNode = this.head;
+    let currNode = this.head;
+
+    while(currNode){
+      if (currNode.data === data && currNode === this.head) {
+        this.head = currNode.next;
+      } else if (currNode.data === data) {
+        prevNode.next = currNode.next;
+        this.length --;
+        break;
+      } else {
+        prevNode = currNode
+        currNode = currNode.next
+      }
+    }
+  }
 }
