@@ -98,4 +98,22 @@ export default class LinkedList {
       return false;
     }
   }
+
+  index(data) {
+    let foundNode = null;
+    let currNode = this.head;
+    let counter = 0
+
+    while (currNode) {
+      if (currNode.data === data) {
+        foundNode = currNode;
+        return counter;
+      } else {
+        currNode = currNode.next;
+        counter ++
+      }
+    }
+
+    return null;
+  }
 }

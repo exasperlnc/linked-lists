@@ -207,7 +207,7 @@ describe('LINKED LIST', () => {
     });
   });
 
-  describe.skip('INDEX', () => {
+  describe('INDEX', () => {
     beforeEach(() => {
       list.push('oh');
       list.push('hello');
