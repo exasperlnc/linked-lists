@@ -90,4 +90,12 @@ export default class LinkedList {
     }
     return returnArray;
   }
+
+  include(data) {
+    if (this.find(data)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
 }

@@ -190,7 +190,7 @@ describe('LINKED LIST', () => {
     });
   });
 
-  describe.skip('INCLUDES', () => {
+  describe('INCLUDES', () => {
     beforeEach(() => {
       list.push('The');
       list.push('rain');
